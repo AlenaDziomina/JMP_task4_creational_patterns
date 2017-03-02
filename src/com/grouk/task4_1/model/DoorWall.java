@@ -3,7 +3,7 @@ package com.grouk.task4_1.model;
 /**
  * Created by Alena on 02.03.2017.
  */
-public class DoorWall extends Wall {
+public class DoorWall extends SimpleWall {
     protected Room r1;
     protected Room r2;
     protected boolean isOpen;

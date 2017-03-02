@@ -1,12 +1,9 @@
 package com.grouk.task4_1.model;
 
 /**
- * Created by Alena on 02.03.2017.
+ * Created by Alena on 03.03.2017.
  */
-public class Wall {
-    public Wall(){}
-
-    public boolean enter(){
-        return false;
-    }
+public interface Wall {
+    boolean enter();
+    void open();
 }

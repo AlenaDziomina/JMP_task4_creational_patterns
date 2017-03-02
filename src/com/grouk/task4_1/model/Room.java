@@ -10,19 +10,19 @@ import java.util.Map;
  */
 public class Room {
 
-    private Map<Direction, Wall> sides = new HashMap<Direction, Wall>();
+    private Map<Direction, SimpleWall> sides = new HashMap<Direction, SimpleWall>();
     private int roomNo;
 
     public Room(int roomNo) {
         this.roomNo = roomNo;
     }
 
-    public Wall getSide (Direction direction) {
+    public SimpleWall getSide (Direction direction) {
         return sides.get(direction);
     }
 
-    public void setSide(Direction direction, Wall wall) {
-        sides.put(direction, wall);
+    public void setSide(Direction direction, SimpleWall simpleWall) {
+        sides.put(direction, simpleWall);
     }
 
     public int getRoomNo() {
