@@ -6,7 +6,7 @@ package com.grouk.task4_1.model;
 public class Wall {
     public Wall(){}
 
-    public void enter(){
-        //todo
+    public boolean enter(){
+        return false;
     }
 }
