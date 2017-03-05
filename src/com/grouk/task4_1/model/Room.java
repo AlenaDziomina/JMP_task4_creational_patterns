@@ -8,16 +8,29 @@ import java.util.Map;
 /**
  * Created by Alena on 02.03.2017.
  */
-public class Room {
+public class Room implements Cloneable {
 
     private Map<Direction, Wall> sides = new HashMap<Direction, Wall>();
     private int roomNo;
 
-    public Room(int roomNo) {
+    public Room() {
+
+    }
+
+    public Room(Room room) {
+        room.sides.entrySet().forEach(e -> setSide(e.getKey(), e.getValue().clone()));
+    }
+
+    @Override
+    public Room clone() {
+        return new Room(this);
+    }
+
+    public void init(int roomNo) {
         this.roomNo = roomNo;
     }
 
-    public Wall getSide (Direction direction) {
+    public Wall getSide(Direction direction) {
         return sides.get(direction);
     }
 
