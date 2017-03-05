@@ -3,10 +3,9 @@ package com.grouk.task4_1;
 import com.grouk.task4_1.factory.MagicMazeFactory;
 import com.grouk.task4_1.factory.MazeFactory;
 import com.grouk.task4_1.factory.SimpleMazeFactory;
-import com.grouk.task4_1.model.DoorWall;
+import com.grouk.task4_1.model.simple.DoorWall;
 import com.grouk.task4_1.model.Maze;
-import com.grouk.task4_1.model.Room;
-import com.grouk.task4_1.model.Wall;
+import com.grouk.task4_1.model.simple.Room;
 import com.grouk.task4_1.util.Direction;
 
 public class MazeGame {
@@ -17,10 +16,13 @@ public class MazeGame {
     }
 
     private static MazeFactory getMazeFactoryByName(String name) {
-        switch (name){
-            case "simple": return new SimpleMazeFactory();
-            case "magic": return new MagicMazeFactory();
-            default: throw new RuntimeException("Unknown maze factory " + name);
+        switch (name) {
+            case "simple":
+                return new SimpleMazeFactory();
+            case "magic":
+                return new MagicMazeFactory();
+            default:
+                throw new RuntimeException("Unknown maze factory " + name);
         }
     }
 

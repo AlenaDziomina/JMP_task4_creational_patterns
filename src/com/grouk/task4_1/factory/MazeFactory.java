@@ -1,9 +1,9 @@
 package com.grouk.task4_1.factory;
 
-import com.grouk.task4_1.model.DoorWall;
+import com.grouk.task4_1.model.simple.DoorWall;
 import com.grouk.task4_1.model.Maze;
-import com.grouk.task4_1.model.Room;
-import com.grouk.task4_1.model.Wall;
+import com.grouk.task4_1.model.simple.Room;
+import com.grouk.task4_1.model.simple.Wall;
 
 /**
  * Created by Alena on 02.03.2017.

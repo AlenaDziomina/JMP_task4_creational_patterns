@@ -1,14 +1,17 @@
-package com.grouk.task4_1.model;
+package com.grouk.task4_1.model.simple;
+
+import com.grouk.task4_1.model.simple.Room;
+import com.grouk.task4_1.model.simple.Wall;
 
 /**
  * Created by Alena on 02.03.2017.
  */
 public class DoorWall extends Wall {
-    protected Room r1;
-    protected Room r2;
+    private Room r1;
+    private Room r2;
     protected boolean isOpen;
 
-    public DoorWall (Room r1, Room r2) {
+    public DoorWall(Room r1, Room r2) {
         this.r1 = r1;
         this.r2 = r2;
         this.isOpen = false;
@@ -19,7 +22,7 @@ public class DoorWall extends Wall {
         return isOpen;
     }
 
-    public void open(){
+    public void open() {
         this.isOpen = true;
     }
 }

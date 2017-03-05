@@ -1,4 +1,7 @@
-package com.grouk.task4_1.model;
+package com.grouk.task4_1.model.magic;
+
+import com.grouk.task4_1.model.simple.DoorWall;
+import com.grouk.task4_1.model.simple.Room;
 
 /**
  * Created by Alena on 02.03.2017.

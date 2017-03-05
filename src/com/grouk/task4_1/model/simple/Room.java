@@ -1,4 +1,4 @@
-package com.grouk.task4_1.model;
+package com.grouk.task4_1.model.simple;
 
 import com.grouk.task4_1.util.Direction;
 
@@ -10,14 +10,14 @@ import java.util.Map;
  */
 public class Room {
 
-    private Map<Direction, Wall> sides = new HashMap<Direction, Wall>();
+    private Map<Direction, Wall> sides = new HashMap<>();
     private int roomNo;
 
     public Room(int roomNo) {
         this.roomNo = roomNo;
     }
 
-    public Wall getSide (Direction direction) {
+    public Wall getSide(Direction direction) {
         return sides.get(direction);
     }
 
