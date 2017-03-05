@@ -1,6 +1,7 @@
 package com.grouk.task4_1.factory;
 
 import com.grouk.task4_1.model.MagicDoorWall;
+import com.grouk.task4_1.model.MagicRoom;
 import com.grouk.task4_1.model.Room;
 
 /**
@@ -12,7 +13,13 @@ public class MagicMazeCreator extends SimpleMazeCreator {
         return new MagicDoorWall(r1, r2, getSpell());
     }
 
-    private String getSpell(){
+    @Override
+    protected Room makeRoom(int i) {
+        System.out.println("magic room");
+        return new MagicRoom(i, getSpell());
+    }
+
+    private String getSpell() {
         return "spell";
     }
 }

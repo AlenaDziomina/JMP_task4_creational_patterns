@@ -13,10 +13,13 @@ public class MazeGame {
     }
 
     private static MazeCreator getMazeCreatorByName(String name) {
-        switch (name){
-            case "simple": return new SimpleMazeCreator();
-            case "magic": return new MagicMazeCreator();
-            default: throw new RuntimeException("Unknown maze factory " + name);
+        switch (name) {
+            case "simple":
+                return new SimpleMazeCreator();
+            case "magic":
+                return new MagicMazeCreator();
+            default:
+                throw new RuntimeException("Unknown maze factory " + name);
         }
     }
 }
