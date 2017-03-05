@@ -5,5 +5,6 @@ package com.grouk.task4_1.model;
  */
 public interface Wall {
     boolean enter();
+
     void open();
 }
