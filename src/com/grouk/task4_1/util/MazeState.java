@@ -8,5 +8,5 @@ public class MazeState {
     public static final int M = 5;
     public static final int K = N * M;
     public static final int S = 2;
-    public static final String MODE = "simple";
+    public static final String MODE = "bombed";
 }
